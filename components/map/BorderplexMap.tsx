@@ -28,12 +28,12 @@ export default function BorderplexMap({ onSelectJurisdiction, selectedJurisdicti
       style: {
         version: 8,
         sources: {
-          'carto-dark': {
+          'carto-voyager': {
             type: 'raster',
             tiles: [
-              'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png',
-              'https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png',
-              'https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png',
+              'https://a.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',
+              'https://b.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',
+              'https://c.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',
             ],
             tileSize: 256,
             attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>',
@@ -41,9 +41,9 @@ export default function BorderplexMap({ onSelectJurisdiction, selectedJurisdicti
         },
         layers: [
           {
-            id: 'carto-dark-layer',
+            id: 'carto-voyager-layer',
             type: 'raster',
-            source: 'carto-dark',
+            source: 'carto-voyager',
             minzoom: 0,
             maxzoom: 19,
           },
@@ -104,12 +104,12 @@ export default function BorderplexMap({ onSelectJurisdiction, selectedJurisdicti
           'circle-color': [
             'match', ['get', 'state'],
             'TX', '#FF8200',
-            'NM', '#10B981',
-            'MX', '#EC4899',
+            'NM', '#059669',
+            'MX', '#DB2777',
             '#6B7280',
           ],
-          'circle-opacity': 0.08,
-          'circle-blur': 0.8,
+          'circle-opacity': 0.12,
+          'circle-blur': 0.6,
         },
       });
 
@@ -123,20 +123,20 @@ export default function BorderplexMap({ onSelectJurisdiction, selectedJurisdicti
           'circle-color': [
             'match', ['get', 'state'],
             'TX', '#FF8200',
-            'NM', '#10B981',
-            'MX', '#EC4899',
+            'NM', '#059669',
+            'MX', '#DB2777',
             '#6B7280',
           ],
-          'circle-opacity': 0.25,
-          'circle-stroke-width': 1.5,
+          'circle-opacity': 0.3,
+          'circle-stroke-width': 2,
           'circle-stroke-color': [
             'match', ['get', 'state'],
             'TX', '#FF8200',
-            'NM', '#10B981',
-            'MX', '#EC4899',
+            'NM', '#059669',
+            'MX', '#DB2777',
             '#6B7280',
           ],
-          'circle-stroke-opacity': 0.6,
+          'circle-stroke-opacity': 0.8,
         },
       });
 
@@ -150,11 +150,11 @@ export default function BorderplexMap({ onSelectJurisdiction, selectedJurisdicti
           'circle-color': [
             'match', ['get', 'state'],
             'TX', '#FF8200',
-            'NM', '#10B981',
-            'MX', '#EC4899',
+            'NM', '#059669',
+            'MX', '#DB2777',
             '#6B7280',
           ],
-          'circle-opacity': 0.9,
+          'circle-opacity': 1,
         },
       });
 
@@ -176,8 +176,8 @@ export default function BorderplexMap({ onSelectJurisdiction, selectedJurisdicti
           'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
         },
         paint: {
-          'text-color': '#E2E8F0',
-          'text-halo-color': '#041E42',
+          'text-color': '#0F172A',
+          'text-halo-color': '#FFFFFF',
           'text-halo-width': 2,
         },
       });
@@ -196,8 +196,8 @@ export default function BorderplexMap({ onSelectJurisdiction, selectedJurisdicti
           'text-font': ['Open Sans Regular', 'Arial Unicode MS Regular'],
         },
         paint: {
-          'text-color': '#94A3B8',
-          'text-halo-color': '#041E42',
+          'text-color': '#64748B',
+          'text-halo-color': '#FFFFFF',
           'text-halo-width': 1.5,
         },
       });
@@ -244,7 +244,7 @@ export default function BorderplexMap({ onSelectJurisdiction, selectedJurisdicti
           ],
           'circle-opacity': 0.9,
           'circle-stroke-width': 2,
-          'circle-stroke-color': '#041E42',
+          'circle-stroke-color': '#FFFFFF',
         },
       });
 
@@ -262,14 +262,14 @@ export default function BorderplexMap({ onSelectJurisdiction, selectedJurisdicti
         paint: {
           'text-color': [
             'match', ['get', 'type'],
-            'national_lab', '#06B6D4',
-            'university', '#8B5CF6',
-            'military', '#EF4444',
-            'defense_contractor', '#F43F5E',
-            'aerospace', '#6366F1',
-            '#94A3B8',
+            'national_lab', '#0E7490',
+            'university', '#7C3AED',
+            'military', '#DC2626',
+            'defense_contractor', '#E11D48',
+            'aerospace', '#4F46E5',
+            '#475569',
           ],
-          'text-halo-color': '#041E42',
+          'text-halo-color': '#FFFFFF',
           'text-halo-width': 1.5,
         },
       });
@@ -361,25 +361,25 @@ export default function BorderplexMap({ onSelectJurisdiction, selectedJurisdicti
       <div ref={mapContainer} className="w-full h-full" />
 
       {/* Legend overlay */}
-      <div className="absolute bottom-4 left-4 bg-[#041E42]/90 backdrop-blur-sm border border-[#1E4976] rounded-lg px-3 py-2.5 text-[10px]">
-        <div className="font-semibold text-[#6B98C7] tracking-wider mb-1.5" style={{ fontSize: '8px' }}>LEGEND</div>
+      <div className="absolute bottom-4 left-4 bg-white/92 backdrop-blur-sm border border-[#E2E8F0] rounded-lg px-3 py-2.5 text-[10px] shadow-sm">
+        <div className="font-semibold text-[#64748B] tracking-wider mb-1.5" style={{ fontSize: '8px' }}>LEGEND</div>
         <div className="space-y-1.5">
-          <div className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[#FF8200] opacity-70" /><span className="text-[#94A3B8]">TX Jurisdiction</span></div>
-          <div className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[#10B981] opacity-70" /><span className="text-[#94A3B8]">NM Jurisdiction</span></div>
-          <div className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[#EC4899] opacity-70" /><span className="text-[#94A3B8]">MX (Binational)</span></div>
-          <div className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[#EF4444] opacity-70" /><span className="text-[#94A3B8]">Military/Defense</span></div>
-          <div className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[#8B5CF6] opacity-70" /><span className="text-[#94A3B8]">University Partner</span></div>
+          <div className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[#FF8200]" /><span className="text-[#334155]">TX Jurisdiction</span></div>
+          <div className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[#059669]" /><span className="text-[#334155]">NM Jurisdiction</span></div>
+          <div className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[#DB2777]" /><span className="text-[#334155]">MX (Binational)</span></div>
+          <div className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[#DC2626]" /><span className="text-[#334155]">Military/Defense</span></div>
+          <div className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[#7C3AED]" /><span className="text-[#334155]">University Partner</span></div>
         </div>
-        <div className="mt-1.5 pt-1.5 border-t border-[#1E4976] text-[#64748B]" style={{ fontSize: '8px' }}>Circle size = population</div>
+        <div className="mt-1.5 pt-1.5 border-t border-[#E2E8F0] text-[#64748B]" style={{ fontSize: '8px' }}>Circle size = population</div>
       </div>
 
       {/* Coordinate overlay */}
-      <div className="absolute bottom-4 right-4 text-[9px] text-[#1E4976] font-mono">
+      <div className="absolute bottom-4 right-4 text-[9px] text-[#94A3B8] font-mono bg-white/80 px-1.5 py-0.5 rounded">
         31.76N, 106.44W
       </div>
 
       {!loaded && (
-        <div className="absolute inset-0 flex items-center justify-center bg-[#041E42]">
+        <div className="absolute inset-0 flex items-center justify-center bg-[#F8FAFC]">
           <div className="text-center">
             <div className="w-8 h-8 border-2 border-[#FF8200] border-t-transparent rounded-full animate-spin mx-auto mb-2" />
             <div className="text-xs text-[#64748B]">Loading map...</div>
@@ -393,7 +393,7 @@ export default function BorderplexMap({ onSelectJurisdiction, selectedJurisdicti
           border: 1px solid #1E4976 !important;
           border-radius: 12px !important;
           padding: 12px 14px !important;
-          box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+          box-shadow: 0 8px 32px rgba(0,0,0,0.3) !important;
           color: white !important;
         }
         .custom-popup .maplibregl-popup-tip {
@@ -401,19 +401,17 @@ export default function BorderplexMap({ onSelectJurisdiction, selectedJurisdicti
           border-bottom-color: #041E42 !important;
         }
         .maplibregl-ctrl-group {
-          background: #041E42 !important;
-          border: 1px solid #1E4976 !important;
+          background: white !important;
+          border: 1px solid #E2E8F0 !important;
           border-radius: 8px !important;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.08) !important;
         }
         .maplibregl-ctrl-group button {
           width: 32px !important;
           height: 32px !important;
         }
         .maplibregl-ctrl-group button + button {
-          border-top: 1px solid #1E4976 !important;
-        }
-        .maplibregl-ctrl-group button span {
-          filter: invert(1) brightness(0.8);
+          border-top: 1px solid #E2E8F0 !important;
         }
       `}</style>
     </div>

@@ -63,7 +63,7 @@ export default function OverviewPage() {
           {/* Map + Right Sidebar */}
           <div className="grid lg:grid-cols-[1fr_340px] gap-4">
             {/* Map */}
-            <div className="navy-card p-1">
+            <div className="card p-1 overflow-hidden">
               <BorderplexMap
                 height="480px"
                 onSelectJurisdiction={setSelectedJurisdiction}
