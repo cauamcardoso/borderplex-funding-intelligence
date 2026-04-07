@@ -109,12 +109,12 @@ export default function CapabilitiesPage() {
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold mb-3" style={{ color: '#0F172A' }}>Capability Atlas</h1>
           <p className="max-w-3xl text-sm leading-relaxed mb-4" style={{ color: '#334155' }}>
-            The Capability Atlas maps the full spectrum of institutional resources available for regional challenge response. It includes UTEP&apos;s internal research centers and institutes (Tier A) and the broader partner network of national laboratories, universities, military installations, defense contractors, and manufacturers (Tier B). Each capability is described in terms of what it can deliver, which sectors it serves, and how quickly it can be mobilized.
+            The Capability Atlas maps the full inventory of institutional resources available across the UTEP network and its regional partners. Every entry describes deployable capacity: what a given center, institute, or partner can actually deliver against a specific type of challenge. This goes beyond organizational directories. A capability listing includes deliverable types, sector alignment, and a readiness assessment that tells leadership how quickly that resource can be activated for a proposal or project.
           </p>
           <div className="accent-card p-4" style={{ borderLeftColor: '#8B5CF6' }}>
             <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: '#64748B' }}>Methodology</p>
             <p className="text-xs leading-relaxed" style={{ color: '#64748B' }}>
-              Capabilities are cataloged from institutional inventories, faculty expertise profiles, and partner engagement records. Each entry describes deployable capacity, not just organizational affiliation. Readiness is assessed on a three-tier scale: Rapid Deploy (under 30 days), Ready (30 to 90 days), and Extended (90 to 180 days).
+              Capabilities are cataloged from institutional inventories, faculty expertise profiles, and partner engagement records compiled through 50+ stakeholder meetings conducted in FY2025. Each entry describes deployable capacity rather than organizational affiliation. Readiness is assessed on a three-tier scale: Rapid Deploy (under 30 days, existing staff and equipment in place), Ready (30 to 90 days, requires preparation such as hiring or procurement), and Extended (90 to 180 days, requires significant preparation including new agreements or security clearances). The Tier A/Tier B distinction separates UTEP-internal capabilities from external partner resources.
             </p>
           </div>
         </div>

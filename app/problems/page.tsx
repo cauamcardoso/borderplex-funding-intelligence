@@ -135,7 +135,7 @@ export default function ChallengesPage() {
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-3">Regional Challenge Registry</h1>
           <p className="text-[#334155] max-w-3xl leading-relaxed mb-6">
-            Every challenge listed here comes from an adopted strategic plan, community needs assessment, or stakeholder engagement. Each one has been scoped to a level of specificity that supports federal funding alignment. Challenges are organized by the jurisdictions that own them and the policy sectors they belong to.
+            The Regional Challenge Registry is the foundation of the platform. It catalogs every documented regional need drawn from adopted government strategic plans, community needs assessments, and formal stakeholder engagement across the Borderplex corridor. Each challenge has been evaluated and scoped to a level of specificity that makes it directly usable for federal funding proposals. This is not a wish list. Every entry here reflects an officially adopted priority from a government entity in the region.
           </p>
 
           {/* Methodology */}
@@ -145,7 +145,7 @@ export default function ChallengesPage() {
               <div>
                 <h3 className="text-sm font-semibold text-[#0F172A] mb-1">Methodology</h3>
                 <p className="text-xs text-[#334155] leading-relaxed">
-                  Challenges are identified through a systematic review of adopted strategic plans from all 13 jurisdictions in the Borderplex corridor. Each challenge is evaluated against five criteria: population impact, estimated financial scale, urgency as expressed by the adopting authority, federal agency alignment breadth, and cross-jurisdictional scope.
+                  Challenges are identified through a systematic review of the most recent adopted strategic plan from each of the 13 jurisdictions in the corridor. Raw plan language is rewritten to funding-grade specificity: what the problem is, where it occurs, who is affected, and at what financial scale. Each challenge is then evaluated on five criteria: population impact, estimated financial scale, urgency as expressed by the adopting authority, federal agency alignment breadth, and cross-jurisdictional scope. These criteria determine the urgency rating (Critical, High, Medium, Low) and the challenge's weight in alignment scoring.
                 </p>
               </div>
             </div>

@@ -144,12 +144,12 @@ export default function FundingPage() {
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold mb-3" style={{ color: '#0F172A' }}>Funding Landscape</h1>
           <p className="max-w-3xl text-sm leading-relaxed mb-4" style={{ color: '#334155' }}>
-            The Funding Landscape tracks federal, state, and binational programs relevant to the Borderplex region. Programs are organized by source level, sector alignment, and award scale. The goal is to identify which funding mechanisms match specific regional challenges and UTEP capabilities.
+            The Funding Landscape tracks every federal, state, and binational program relevant to the Borderplex corridor. Programs are organized by source level, sector alignment, award scale, and cycle timing. The goal is to give R&amp;I leadership a complete picture of where funding exists, at what scale, and under what eligibility conditions, so that no relevant opportunity is missed and no ineligible program is pursued.
           </p>
           <div className="accent-card p-4" style={{ borderLeftColor: '#059669' }}>
             <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: '#64748B' }}>Methodology</p>
             <p className="text-xs leading-relaxed" style={{ color: '#64748B' }}>
-              Funding programs are sourced from SAM.gov, Grants.gov, state agency portals, and binational development banks. Each program is evaluated for sector alignment, eligibility requirements, award range, and cycle timing. The platform currently tracks {funding.length} programs across {sourceBreakdown.length} source levels.
+              Programs are sourced from SAM.gov, Grants.gov, individual federal agency websites, Texas Higher Education Coordinating Board publications, CPRIT announcements, New Mexico Economic Development Department portals, and binational institutions (NADB, BECC). Each program is evaluated for sector alignment with regional challenges, eligibility requirements (who can apply and geographic restrictions), award range, and cycle timing. Eligibility mapping is particularly important: USDA Rural programs exclude cities above 10,000 population, Texas state programs exclude New Mexico entities, and binational programs require border proximity certification.
             </p>
           </div>
         </div>

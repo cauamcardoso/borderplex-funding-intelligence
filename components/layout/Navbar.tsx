@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Shield, Network, DollarSign, Zap, Menu, X } from 'lucide-react';
+import { LayoutDashboard, Shield, Network, DollarSign, Zap, BookOpen, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 const navItems = [
@@ -11,6 +11,7 @@ const navItems = [
   { href: '/capabilities', label: 'Capability Atlas', icon: Network },
   { href: '/funding', label: 'Funding Landscape', icon: DollarSign },
   { href: '/alignments', label: 'Alignment Engine', icon: Zap },
+  { href: '/methodology', label: 'Methodology', icon: BookOpen },
 ];
 
 export default function Navbar() {

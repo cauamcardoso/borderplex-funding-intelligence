@@ -354,11 +354,11 @@ export default function AlignmentsPage() {
             </div>
             <h1 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-3">Alignment Engine</h1>
             <p className="text-[#334155] max-w-3xl leading-relaxed mb-4">
-              The Alignment Engine is the intelligence core of the platform. It matches regional challenges with institutional capabilities and funding programs to produce scored, actionable opportunity alignments. Each alignment represents a specific combination of challenge, capability, and funding that could be developed into a competitive proposal.
+              The Alignment Engine is the intelligence core of the platform. It takes the challenges from Layer 1, the capabilities from Layer 2, and the funding programs from Layer 3, and evaluates every viable combination to produce scored opportunity alignments. Each alignment is a specific, actionable triad: one regional challenge, one or more institutional capabilities positioned to address it, and one or more funding programs that could resource the work. These are not hypothetical matches. Each alignment includes a rationale, a proposed partnership structure, an estimated value, a timeline, and identified gaps.
             </p>
             <div className="bg-[#F1F5F9] border border-[#E2E8F0] rounded-xl p-4 max-w-3xl">
               <p className="text-xs text-[#64748B] leading-relaxed">
-                <span className="font-semibold text-[#334155]">Methodology:</span> Alignment scores are computed from four weighted factors: challenge urgency and scale (30%), capability readiness and sector fit (25%), funding program fit and award potential (25%), and partnership maturity and structural feasibility (20%). Scores above 90 indicate high-confidence opportunities ready for immediate pursuit.
+                <span className="font-semibold text-[#334155]">Methodology:</span> Alignment scores range from 0 to 100 and are computed from four weighted factors: challenge urgency and scale (30%), which measures how pressing and significant the challenge is; capability readiness and sector fit (25%), which measures how well positioned the proposed team is to respond; funding program fit and award potential (25%), which measures the quality of match between the program and the challenge/capability pair; and partnership maturity and structural feasibility (20%), which measures how realistic the proposed consortium is. Scores of 90 and above indicate high-confidence opportunities where the challenge is urgent, the capability is ready, the funding fits, and partnerships are in place.
               </p>
             </div>
           </div>

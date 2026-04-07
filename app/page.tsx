@@ -188,10 +188,10 @@ export default function OverviewPage() {
             <h2 className="text-sm font-bold text-[#0F172A] mb-3">How It Works</h2>
             <div className="grid grid-cols-4 gap-3">
               {[
-                { step: '01', title: 'Identify', desc: 'Catalog challenges from adopted plans across 13 jurisdictions.', icon: Search, color: '#DC2626' },
-                { step: '02', title: 'Map', desc: 'Match challenges to UTEP centers, labs, and partner capabilities.', icon: Target, color: '#8B5CF6' },
-                { step: '03', title: 'Align', desc: 'Connect pairs to federal, state, and binational funding programs.', icon: GitMerge, color: '#059669' },
-                { step: '04', title: 'Score', desc: 'Produce ranked alignments ready for proposal development.', icon: BarChart3, color: '#FF8200' },
+                { step: '01', title: 'Identify', desc: 'We review every adopted strategic plan, needs assessment, and stakeholder input from the 13 jurisdictions in the Borderplex corridor. Each challenge is documented at a level of specificity that supports federal funding alignment, including population impact, financial scale, and agency mapping.', icon: Search, color: '#DC2626' },
+                { step: '02', title: 'Map', desc: 'We catalog the full spectrum of UTEP research centers, institutes, and partner organizations, describing each in terms of what they can deliver, which sectors they serve, and how quickly they can mobilize. The network includes national laboratories, universities, military installations, and manufacturers.', icon: Target, color: '#8B5CF6' },
+                { step: '03', title: 'Align', desc: 'We evaluate every combination of challenge, capability, and funding program for sector fit, eligibility match, and structural feasibility. Only combinations that meet all three criteria are retained as potential alignments.', icon: GitMerge, color: '#059669' },
+                { step: '04', title: 'Score', desc: 'Each alignment receives a composite score based on four weighted factors: challenge urgency (30%), capability readiness (25%), funding fit (25%), and partnership maturity (20%). Scores above 90 indicate opportunities ready for immediate pursuit.', icon: BarChart3, color: '#FF8200' },
               ].map(s => (
                 <div key={s.step} className="flex items-start gap-3 p-3 rounded-lg bg-[#F8FAFC]">
                   <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: `${s.color}10` }}>
