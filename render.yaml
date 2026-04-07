@@ -1,0 +1,8 @@
+services:
+  - type: static
+    name: borderplex-funding-intelligence
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./out
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
